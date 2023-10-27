@@ -1,0 +1,189 @@
+/** Created by saimoom **/
+
+.bar {
+  padding: 4px 14px;
+  margin: 10px $spacing-1 0px;
+  border-radius: 12px;
+  background-color: $color-bg-0;
+  box-shadow: 0 6px 5px 2px $color-shadow;
+
+  // TODO: eliminate
+  .module {
+    margin: 0px 0px 0px 0px;
+    border-radius: 10px 10px 0px 10px;
+  }
+
+  .center {
+    margin: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .sep {
+    color: $color-grey;
+    font-size: 24px;
+    margin: 0px 8px 0px 8px;
+  }
+
+  /** tooltip!! **/
+
+  tooltip.background {
+    background-color: $color-bg-1;
+    font-size: 18;
+    border-radius: 10px;
+    color: $color-white;
+  }
+
+  tooltip label {
+    margin: 6px;
+  }
+
+  /** Widgets **/
+
+  .workspaces {
+    font-size: 28px;
+
+    .workspace-button {
+      color: $color-grey;
+
+      &.exists,
+      &:hover {
+        color: $color-white;
+
+        &.focused {
+          color: $color-red;
+        }
+      }
+    }
+  }
+
+  .app-button {
+    color: $color-purple2;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 12px 0px 12px;
+
+    &.close-button {
+      color: $color-red;
+    }
+  }
+
+  .brightbar trough highlight {
+    border-radius: 10px;
+    background-image: linear-gradient(
+      to right,
+      $color-yellow 30%,
+      $color-white 50%,
+      $color-yellow 100% * 50
+    );
+  }
+
+  .brightness {
+    margin: 0px 15px 0px 0px;
+  }
+
+  .bright_icon {
+    color: $color-yellow;
+    font-size: 24;
+  }
+
+  .volume_icon {
+    font-size: 24;
+    color: $color-teal;
+    margin: 0px 10px 0px 5px;
+  }
+
+  .volbar trough highlight {
+    background-image: linear-gradient(
+      to right,
+      $color-teal 30%,
+      $color-green 50%,
+      $color-teal 100% * 50
+    );
+    border-radius: 10px;
+  }
+
+  .wifi-essid {
+    font-family: $font-family-primary;
+    font-size: 18;
+    font-weight: bold;
+    color: $color-purple;
+    margin: 0px 0px 0px 5px;
+  }
+
+  .wifi {
+    font-size: 24;
+    color: $color-purple;
+    margin: 0px 15px 0px 5px;
+  }
+
+  .iconbat {
+    color: $color-green;
+  }
+
+  .iconbat,
+  .iconmem {
+    font-size: 15;
+    margin: 10px;
+  }
+
+  .bat_module {
+    background-color: rgba(00, 00, 00, 0);
+    border-radius: 16px;
+    margin: 0px 10px 0px 5px;
+  }
+
+  .batbar {
+    color: $color-green;
+    background-color: $color-bg-widget;
+    border-radius: 10px;
+  }
+
+  .membar {
+    color: $color-red;
+    background-color: $color-bg-widget;
+    border-radius: 10px;
+  }
+
+  .clock {
+    .date {
+      margin: 0px 20px -4px -1px;
+      color: $color-white;
+      font-size: 24;
+    }
+
+    .time {
+      margin: 2px 10px 0px 2px;
+      color: $color-white;
+      font-weight: bold;
+      font-size: 28;
+    }
+  }
+
+  .notifications {
+    margin: 0px 20px 0px 0px;
+    color: $color-white;
+    font-size: 28;
+  }
+
+  .icon-launcher {
+    margin: 0px 10px 0px 15px;
+    color: $color-white;
+    font-size: 36px;
+  }
+
+  .iconsearch {
+    // margin: 0px 10px 0px 20px;
+    color: $color-white;
+    font-size: 24px;
+  }
+
+  .mem_module {
+    background-color: rgba(00, 00, 00, 0);
+    border-radius: 16px;
+    margin: 0px 5px 0px 3px;
+  }
+
+  .iconmem {
+    color: $color-red;
+  }
+}
